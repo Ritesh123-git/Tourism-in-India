@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div id="loading"></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Indian Tourism</a>
       <button
@@ -124,7 +125,7 @@
           </ul>
         </nav>
         <div
-          data-spy="scroll"
+        b   data-spy="scroll"
           data-target="#navbar-example2"
           data-offset="0"
           style="height: 300px; overflow-y: scroll;"
@@ -295,6 +296,12 @@
       var scrollSpy = new bootstrap.ScrollSpy(document.body, {
         target: "#navbar-example",
       });
+    </script>
+    <script>
+      var preloader = document.getElementById("loading");
+      function myFunction() {
+        preloader.style.display = "none";
+      }
     </script>
   </body>
 </html>
